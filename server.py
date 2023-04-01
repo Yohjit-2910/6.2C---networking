@@ -1,16 +1,9 @@
+# Documentation
+# Name : Yohjit Chopra
+# Roll No. 2110994798
+
 # Import the necessary modules
 from socket import *
-
-# Define a dictionary containing domain names and their corresponding IP addresses
-dns_data = {
-    'www.google.com': '142.250.192.14',
-    'www.facebook.com': '157.240.23.35',
-    'www.chalkpad.com': '52.206.180.240',
-    'www.netflix.com': '54.74.73.31',
-    'www.w3schools.com': '76.223.115.82',
-    'www.trello.com': '104.192.137.10',
-    'www.geeksforgeeks.com': '199.59.243.223'
-}
 
 # Set the IP address and port number for the server
 serverAddress = 'localhost'
@@ -22,6 +15,17 @@ serverSocket = socket(AF_INET, SOCK_DGRAM)
 
 # Bind the server socket to the IP address and port number
 serverSocket.bind((serverAddress, Port))
+
+# Define a dictionary containing domain names and their corresponding IP addresses
+dns_data = {
+    'www.google.com': '142.250.192.14',
+    'www.facebook.com': '157.240.23.35',
+    'www.chalkpad.com': '52.206.180.240',
+    'www.netflix.com': '54.74.73.31',
+    'www.w3schools.com': '76.223.115.82',
+    'www.trello.com': '104.192.137.10',
+    'www.geeksforgeeks.com': '199.59.243.223'
+}
 
 # Print a message to confirm that the server is running and listening for incoming connections
 print("The server is listening")
